@@ -37,3 +37,18 @@ dlx scripts
 ./lxd.sh
 ./distrobuilder.sh
 ```
+
+zfsutils-linux
+https://stanislas.blog/2018/02/lxc-zfs-pool-lxd/
+
+## Network
+
+NetworkManager - desktop
+Netplan - server
+
+## Limits
+
+https://bayton.org/docs/linux/lxd/lxd-zfs-and-bridged-networking-on-ubuntu-16-04-lts/
+
+/etc/security/limits
+/etc/sysctl.conf

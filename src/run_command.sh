@@ -13,3 +13,4 @@ echo $profilelist
 lxc launch dlxbase $container $profilelist
 lxc exec $container -- sh -c "mkdir -p /home/`whoami`/projects && chown -R `whoami`:`whoami` /home/`whoami`/projects"
 lxc config device add $container dlxbind disk source=$HOME/projects/$container path=/home/`whoami`/projects/$container
+lxc config device add $container dlxsshbind disk source=$HOME/.ssh path=/home/`whoami`/.ssh
