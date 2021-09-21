@@ -66,7 +66,7 @@ commands:
     help: Container name
 
 - name: completions
-  help: Generate bash completion scripts. Add `eval "$(dlx completions)"` to your ~/.bashrc to use them.
+  help: Generate bash completion scripts. Add 'eval "$(dlx completions)"' to your ~/.bashrc to use them.
 
 - name: scripts
   help: Open the example scripts directory

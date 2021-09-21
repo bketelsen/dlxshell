@@ -31,7 +31,7 @@ dlx_usage() {
   echo "  shell         Start an interactive shell in a container"
   echo "  stop          Stop a running container"
   echo "  delete        Delete a container"
-  echo "  completions   Generate bash completion scripts. Add `eval "$(dlx completions)"` to your ~/.bashrc to use them."
+  echo "  completions   Generate bash completion scripts. Add 'eval "$(dlx completions)"' to your ~/.bashrc to use them."
   echo "  scripts       Open the example scripts directory"
   echo
 
@@ -291,10 +291,10 @@ dlx_delete_usage() {
 # :command.usage
 dlx_completions_usage() {
   if [[ -n $long_usage ]]; then
-    printf "dlx completions - Generate bash completion scripts. Add `eval "$(dlx completions)"` to your ~/.bashrc to use them.\n"
+    printf "dlx completions - Generate bash completion scripts. Add 'eval "$(dlx completions)"' to your ~/.bashrc to use them.\n"
     echo 
   else
-    printf "dlx completions - Generate bash completion scripts. Add `eval "$(dlx completions)"` to your ~/.bashrc to use them.\n"
+    printf "dlx completions - Generate bash completion scripts. Add 'eval "$(dlx completions)"' to your ~/.bashrc to use them.\n"
     echo 
   fi
 
