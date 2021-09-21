@@ -1,0 +1,72 @@
+name: luthor
+help: LXD Helper Scripts
+version: 0.1.0
+
+commands:
+- name: doctor
+  short: d
+  help: Check system readiness
+  examples:
+  - luthor doctor 
+
+- name: list
+  short: l
+  help: List containers
+  examples:
+  - luthor list 
+
+- name: build
+  short: b
+  help: Build base image
+  dependencies:
+  - lxd
+  - debootstrap
+  - distrobuilder
+
+- name: run
+  short: r
+  help: Create and run a container
+  dependencies:
+  - lxd
+  args:
+  - name: name
+    required: true
+    help: Container name
+
+- name: shell
+  short: s 
+  help: Start an interactive shell in a container
+  dependencies:
+  - lxd
+  args:
+  - name: container
+    required: true
+    help: Container name
+
+
+- name: stop
+  short: p
+  help: Stop a running container
+  dependencies:
+  - lxd
+  args:
+  - name: name
+    required: true
+    help: Container name
+
+
+- name: delete
+  short: k
+  help: Delete a container
+  dependencies:
+  - lxd
+  args:
+  - name: name
+    required: true
+    help: Container name
+
+- name: completions
+  help: Generate bash completion scripts. Add `eval "$(luthor completions)"` to your ~/.bashrc to use them.
+
+- name: scripts
+  help: Open the example scripts directory
