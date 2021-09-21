@@ -19,7 +19,7 @@ chmod +x $SCRIPT_CONFIG_HOME/debootstrap.sh
 cat << EOF > $SCRIPT_CONFIG_HOME/distrobuilder.sh
 #!/bin/bash
 
-sudo snap install distrobuilder
+sudo snap install distrobuilder --classic
 EOF
 chmod +x $SCRIPT_CONFIG_HOME/distrobuilder.sh
 

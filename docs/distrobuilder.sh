@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo snap install distrobuilder
+sudo snap install distrobuilder --classic
