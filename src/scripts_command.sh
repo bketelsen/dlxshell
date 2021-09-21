@@ -12,4 +12,7 @@ echo
 echo "################################################################"
 echo "#                         WARNING!                             #"
 echo "################################################################"
-cd $SCRIPT_CONFIG_HOME
+echo $SCRIPT_CONFIG_HOME
+pushd $SCRIPT_CONFIG_HOME
+pwd
+ls -la 

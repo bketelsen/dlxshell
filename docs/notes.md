@@ -19,3 +19,21 @@ Install lxd, debootstrap, and distrobuilder. Convenience scripts are installed i
 dlx --help
 ls -la ~/.config/dlx/scripts
 ```
+
+`dlx` has a convenience command to change directories into the scripts folder.
+
+```
+dlx scripts
+```
+
+## Install dependencies
+
+These scripts are designed to be run on a fresh Ubuntu 20.04+ install. They require `snapd` to be installed. `dlx` does not require `snapd` so you can install these depedencies another way if that is your preference. Consult linuxcontainers.org for more details.
+
+
+```
+dlx scripts
+./debootstrap.sh
+./lxd.sh
+./distrobuilder.sh
+```
