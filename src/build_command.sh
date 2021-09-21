@@ -5,8 +5,8 @@ pushd $RECIPE_CONFIG_HOME
 sudo distrobuilder build-lxd base.yaml
 # remove the existing base image
 set +e
-lxc image delete luthorbase
+lxc image delete dlxbase
 set -e
 # import the new base image
-lxc image import lxd.tar.xz rootfs.squashfs --alias luthorbase
+lxc image import lxd.tar.xz rootfs.squashfs --alias dlxbase
 popd

@@ -1,4 +1,4 @@
-name: luthor
+name: dlx
 help: LXD Helper Scripts
 version: 0.1.0
 
@@ -7,13 +7,13 @@ commands:
   short: d
   help: Check system readiness
   examples:
-  - luthor doctor 
+  - dlx doctor 
 
 - name: list
   short: l
   help: List containers
   examples:
-  - luthor list 
+  - dlx list 
 
 - name: build
   short: b
@@ -66,7 +66,7 @@ commands:
     help: Container name
 
 - name: completions
-  help: Generate bash completion scripts. Add `eval "$(luthor completions)"` to your ~/.bashrc to use them.
+  help: Generate bash completion scripts. Add `eval "$(dlx completions)"` to your ~/.bashrc to use them.
 
 - name: scripts
   help: Open the example scripts directory

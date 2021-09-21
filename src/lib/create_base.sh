@@ -193,8 +193,8 @@ files:
   generator: dump
   path: /etc/sudoers.d/90-lxd
   content: |-
-    # User rules for luthor
-    luthor ALL=(ALL) NOPASSWD:ALL
+    # User rules for dlx
+    dlx ALL=(ALL) NOPASSWD:ALL
   mode: "0440"
 packages:
   manager: apt
@@ -357,9 +357,9 @@ actions:
     #!/bin/sh
     set -eux
 
-    # Create the luthor user account
+    # Create the dlx user account
     getent group sudo >/dev/null 2>&1 || groupadd --system sudo
-    useradd --create-home -s /bin/bash -G sudo -U luthor
+    useradd --create-home -s /bin/bash -G sudo -U dlx
 - releases:
   - bionic
   - eoan
@@ -407,7 +407,7 @@ mappings:
 
 EOF
 current_user=`whoami`
-old="luthor"
+old="dlx"
 filename="data.txt"
 sed -i "s/$old/$current_user/" $RECIPE_CONFIG_HOME/base.yaml
 }

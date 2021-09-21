@@ -8,19 +8,19 @@ version_command() {
 }
 
 # :command.usage
-luthor_usage() {
+dlx_usage() {
   if [[ -n $long_usage ]]; then
-    printf "luthor - LXD Helper Scripts\n"
+    printf "dlx - LXD Helper Scripts\n"
     echo 
   else
-    printf "luthor - LXD Helper Scripts\n"
+    printf "dlx - LXD Helper Scripts\n"
     echo 
   fi
 
   printf "Usage:\n"
-  printf "  luthor [command]\n"
-  printf "  luthor [command] --help | -h\n"
-  printf "  luthor --version | -v\n"
+  printf "  dlx [command]\n"
+  printf "  dlx [command] --help | -h\n"
+  printf "  dlx --version | -v\n"
   echo
   # :command.usage_commands
   printf "Commands:\n"
@@ -31,7 +31,7 @@ luthor_usage() {
   echo "  shell         Start an interactive shell in a container"
   echo "  stop          Stop a running container"
   echo "  delete        Delete a container"
-  echo "  completions   Generate bash completion scripts. Add `eval "$(luthor completions)"` to your ~/.bashrc to use them."
+  echo "  completions   Generate bash completion scripts. Add `eval "$(dlx completions)"` to your ~/.bashrc to use them."
   echo "  scripts       Open the example scripts directory"
   echo
 
@@ -49,12 +49,12 @@ luthor_usage() {
 }
 
 # :command.usage
-luthor_doctor_usage() {
+dlx_doctor_usage() {
   if [[ -n $long_usage ]]; then
-    printf "luthor doctor - Check system readiness\n"
+    printf "dlx doctor - Check system readiness\n"
     echo 
   else
-    printf "luthor doctor - Check system readiness\n"
+    printf "dlx doctor - Check system readiness\n"
     echo 
   fi
 
@@ -62,8 +62,8 @@ luthor_doctor_usage() {
   echo
 
   printf "Usage:\n"
-  printf "  luthor doctor\n"
-  printf "  luthor doctor --help | -h\n"
+  printf "  dlx doctor\n"
+  printf "  dlx doctor --help | -h\n"
   echo
 
   if [[ -n $long_usage ]]; then
@@ -76,19 +76,19 @@ luthor_doctor_usage() {
     # :command.usage_examples
     printf "Examples:\n"
     
-    printf "  luthor doctor\n"
+    printf "  dlx doctor\n"
     echo
 
   fi
 }
 
 # :command.usage
-luthor_list_usage() {
+dlx_list_usage() {
   if [[ -n $long_usage ]]; then
-    printf "luthor list - List containers\n"
+    printf "dlx list - List containers\n"
     echo 
   else
-    printf "luthor list - List containers\n"
+    printf "dlx list - List containers\n"
     echo 
   fi
 
@@ -96,8 +96,8 @@ luthor_list_usage() {
   echo
 
   printf "Usage:\n"
-  printf "  luthor list\n"
-  printf "  luthor list --help | -h\n"
+  printf "  dlx list\n"
+  printf "  dlx list --help | -h\n"
   echo
 
   if [[ -n $long_usage ]]; then
@@ -110,19 +110,19 @@ luthor_list_usage() {
     # :command.usage_examples
     printf "Examples:\n"
     
-    printf "  luthor list\n"
+    printf "  dlx list\n"
     echo
 
   fi
 }
 
 # :command.usage
-luthor_build_usage() {
+dlx_build_usage() {
   if [[ -n $long_usage ]]; then
-    printf "luthor build - Build base image\n"
+    printf "dlx build - Build base image\n"
     echo 
   else
-    printf "luthor build - Build base image\n"
+    printf "dlx build - Build base image\n"
     echo 
   fi
 
@@ -130,8 +130,8 @@ luthor_build_usage() {
   echo
 
   printf "Usage:\n"
-  printf "  luthor build\n"
-  printf "  luthor build --help | -h\n"
+  printf "  dlx build\n"
+  printf "  dlx build --help | -h\n"
   echo
 
   if [[ -n $long_usage ]]; then
@@ -145,12 +145,12 @@ luthor_build_usage() {
 }
 
 # :command.usage
-luthor_run_usage() {
+dlx_run_usage() {
   if [[ -n $long_usage ]]; then
-    printf "luthor run - Create and run a container\n"
+    printf "dlx run - Create and run a container\n"
     echo 
   else
-    printf "luthor run - Create and run a container\n"
+    printf "dlx run - Create and run a container\n"
     echo 
   fi
 
@@ -158,8 +158,8 @@ luthor_run_usage() {
   echo
 
   printf "Usage:\n"
-  printf "  luthor run NAME\n"
-  printf "  luthor run --help | -h\n"
+  printf "  dlx run NAME\n"
+  printf "  dlx run --help | -h\n"
   echo
 
   if [[ -n $long_usage ]]; then
@@ -181,12 +181,12 @@ luthor_run_usage() {
 }
 
 # :command.usage
-luthor_shell_usage() {
+dlx_shell_usage() {
   if [[ -n $long_usage ]]; then
-    printf "luthor shell - Start an interactive shell in a container\n"
+    printf "dlx shell - Start an interactive shell in a container\n"
     echo 
   else
-    printf "luthor shell - Start an interactive shell in a container\n"
+    printf "dlx shell - Start an interactive shell in a container\n"
     echo 
   fi
 
@@ -194,8 +194,8 @@ luthor_shell_usage() {
   echo
 
   printf "Usage:\n"
-  printf "  luthor shell CONTAINER\n"
-  printf "  luthor shell --help | -h\n"
+  printf "  dlx shell CONTAINER\n"
+  printf "  dlx shell --help | -h\n"
   echo
 
   if [[ -n $long_usage ]]; then
@@ -217,12 +217,12 @@ luthor_shell_usage() {
 }
 
 # :command.usage
-luthor_stop_usage() {
+dlx_stop_usage() {
   if [[ -n $long_usage ]]; then
-    printf "luthor stop - Stop a running container\n"
+    printf "dlx stop - Stop a running container\n"
     echo 
   else
-    printf "luthor stop - Stop a running container\n"
+    printf "dlx stop - Stop a running container\n"
     echo 
   fi
 
@@ -230,8 +230,8 @@ luthor_stop_usage() {
   echo
 
   printf "Usage:\n"
-  printf "  luthor stop NAME\n"
-  printf "  luthor stop --help | -h\n"
+  printf "  dlx stop NAME\n"
+  printf "  dlx stop --help | -h\n"
   echo
 
   if [[ -n $long_usage ]]; then
@@ -253,12 +253,12 @@ luthor_stop_usage() {
 }
 
 # :command.usage
-luthor_delete_usage() {
+dlx_delete_usage() {
   if [[ -n $long_usage ]]; then
-    printf "luthor delete - Delete a container\n"
+    printf "dlx delete - Delete a container\n"
     echo 
   else
-    printf "luthor delete - Delete a container\n"
+    printf "dlx delete - Delete a container\n"
     echo 
   fi
 
@@ -266,8 +266,8 @@ luthor_delete_usage() {
   echo
 
   printf "Usage:\n"
-  printf "  luthor delete NAME\n"
-  printf "  luthor delete --help | -h\n"
+  printf "  dlx delete NAME\n"
+  printf "  dlx delete --help | -h\n"
   echo
 
   if [[ -n $long_usage ]]; then
@@ -289,18 +289,18 @@ luthor_delete_usage() {
 }
 
 # :command.usage
-luthor_completions_usage() {
+dlx_completions_usage() {
   if [[ -n $long_usage ]]; then
-    printf "luthor completions - Generate bash completion scripts. Add `eval "$(luthor completions)"` to your ~/.bashrc to use them.\n"
+    printf "dlx completions - Generate bash completion scripts. Add `eval "$(dlx completions)"` to your ~/.bashrc to use them.\n"
     echo 
   else
-    printf "luthor completions - Generate bash completion scripts. Add `eval "$(luthor completions)"` to your ~/.bashrc to use them.\n"
+    printf "dlx completions - Generate bash completion scripts. Add `eval "$(dlx completions)"` to your ~/.bashrc to use them.\n"
     echo 
   fi
 
   printf "Usage:\n"
-  printf "  luthor completions\n"
-  printf "  luthor completions --help | -h\n"
+  printf "  dlx completions\n"
+  printf "  dlx completions --help | -h\n"
   echo
 
   if [[ -n $long_usage ]]; then
@@ -314,18 +314,18 @@ luthor_completions_usage() {
 }
 
 # :command.usage
-luthor_scripts_usage() {
+dlx_scripts_usage() {
   if [[ -n $long_usage ]]; then
-    printf "luthor scripts - Open the example scripts directory\n"
+    printf "dlx scripts - Open the example scripts directory\n"
     echo 
   else
-    printf "luthor scripts - Open the example scripts directory\n"
+    printf "dlx scripts - Open the example scripts directory\n"
     echo 
   fi
 
   printf "Usage:\n"
-  printf "  luthor scripts\n"
-  printf "  luthor scripts --help | -h\n"
+  printf "  dlx scripts\n"
+  printf "  dlx scripts --help | -h\n"
   echo
 
   if [[ -n $long_usage ]]; then
@@ -707,8 +707,8 @@ files:
   generator: dump
   path: /etc/sudoers.d/90-lxd
   content: |-
-    # User rules for luthor
-    luthor ALL=(ALL) NOPASSWD:ALL
+    # User rules for dlx
+    dlx ALL=(ALL) NOPASSWD:ALL
   mode: "0440"
 packages:
   manager: apt
@@ -871,9 +871,9 @@ actions:
     #!/bin/sh
     set -eux
 
-    # Create the luthor user account
+    # Create the dlx user account
     getent group sudo >/dev/null 2>&1 || groupadd --system sudo
-    useradd --create-home -s /bin/bash -G sudo -U luthor
+    useradd --create-home -s /bin/bash -G sudo -U dlx
 - releases:
   - bionic
   - eoan
@@ -921,7 +921,7 @@ mappings:
 
 EOF
 current_user=`whoami`
-old="luthor"
+old="dlx"
 filename="data.txt"
 sed -i "s/$old/$current_user/" $RECIPE_CONFIG_HOME/base.yaml
 }
@@ -1041,7 +1041,7 @@ send_completions() {
   echo $'# This bash completions script was generated by'
   echo $'# completely (https://github.com/dannyben/completely)'
   echo $'# Modifying it manually is not recommended'
-  echo $'_luthor_completions() {'
+  echo $'_dlx_completions() {'
   echo $'  local cur=${COMP_WORDS[COMP_CWORD]}'
   echo $'  local comp_line="${COMP_WORDS[*]:1}"'
   echo $''
@@ -1057,12 +1057,12 @@ send_completions() {
   echo $'  esac'
   echo $'}'
   echo $''
-  echo $'complete -F _luthor_completions luthor'
+  echo $'complete -F _dlx_completions dlx'
 }
 
 # :command.command_functions
 # :command.function
-luthor_doctor_command() {
+dlx_doctor_command() {
   # :src/doctor_command.sh
   #inspect_args
   
@@ -1073,13 +1073,13 @@ luthor_doctor_command() {
 }
 
 # :command.function
-luthor_list_command() {
+dlx_list_command() {
   # :src/list_command.sh
   lxc ls
 }
 
 # :command.function
-luthor_build_command() {
+dlx_build_command() {
   # :src/build_command.sh
   #inspect_args
   
@@ -1088,15 +1088,15 @@ luthor_build_command() {
   sudo distrobuilder build-lxd base.yaml
   # remove the existing base image
   set +e
-  lxc image delete luthorbase
+  lxc image delete dlxbase
   set -e
   # import the new base image
-  lxc image import lxd.tar.xz rootfs.squashfs --alias luthorbase
+  lxc image import lxd.tar.xz rootfs.squashfs --alias dlxbase
   popd
 }
 
 # :command.function
-luthor_run_command() {
+dlx_run_command() {
   # :src/run_command.sh
   container=${args[name]}
   
@@ -1110,13 +1110,13 @@ luthor_run_command() {
   done
   echo $profilelist
   
-  lxc launch luthorbase $container $profilelist
+  lxc launch dlxbase $container $profilelist
   lxc exec $container -- sh -c "mkdir -p /home/`whoami`/projects && chown -R `whoami`:`whoami` /home/`whoami`/projects"
-  lxc config device add $container luthorbind disk source=$HOME/projects/$container path=/home/`whoami`/projects/$container
+  lxc config device add $container dlxbind disk source=$HOME/projects/$container path=/home/`whoami`/projects/$container
 }
 
 # :command.function
-luthor_shell_command() {
+dlx_shell_command() {
   # :src/shell_command.sh
   container=${args[container]}
   
@@ -1124,7 +1124,7 @@ luthor_shell_command() {
 }
 
 # :command.function
-luthor_stop_command() {
+dlx_stop_command() {
   # :src/stop_command.sh
   container=${args[name]}
   
@@ -1132,7 +1132,7 @@ luthor_stop_command() {
 }
 
 # :command.function
-luthor_delete_command() {
+dlx_delete_command() {
   # :src/delete_command.sh
   container=${args[name]}
   
@@ -1140,13 +1140,13 @@ luthor_delete_command() {
 }
 
 # :command.function
-luthor_completions_command() {
+dlx_completions_command() {
   # :src/completions_command.sh
   send_completions
 }
 
 # :command.function
-luthor_scripts_command() {
+dlx_scripts_command() {
   # :src/scripts_command.sh
   echo "################################################################"
   echo "#                         WARNING!                             #"
@@ -1176,7 +1176,7 @@ parse_requirements() {
   
   --help | -h )
     long_usage=yes
-    luthor_usage
+    dlx_usage
     exit
     ;;
   
@@ -1193,69 +1193,69 @@ parse_requirements() {
   doctor | d )
     action="doctor"
     shift
-    luthor_doctor_parse_requirements "$@"
+    dlx_doctor_parse_requirements "$@"
     shift $#
     ;;    
   
   list | l )
     action="list"
     shift
-    luthor_list_parse_requirements "$@"
+    dlx_list_parse_requirements "$@"
     shift $#
     ;;    
   
   build | b )
     action="build"
     shift
-    luthor_build_parse_requirements "$@"
+    dlx_build_parse_requirements "$@"
     shift $#
     ;;    
   
   run | r )
     action="run"
     shift
-    luthor_run_parse_requirements "$@"
+    dlx_run_parse_requirements "$@"
     shift $#
     ;;    
   
   shell | s )
     action="shell"
     shift
-    luthor_shell_parse_requirements "$@"
+    dlx_shell_parse_requirements "$@"
     shift $#
     ;;    
   
   stop | p )
     action="stop"
     shift
-    luthor_stop_parse_requirements "$@"
+    dlx_stop_parse_requirements "$@"
     shift $#
     ;;    
   
   delete | k )
     action="delete"
     shift
-    luthor_delete_parse_requirements "$@"
+    dlx_delete_parse_requirements "$@"
     shift $#
     ;;    
   
   completions )
     action="completions"
     shift
-    luthor_completions_parse_requirements "$@"
+    dlx_completions_parse_requirements "$@"
     shift $#
     ;;    
   
   scripts )
     action="scripts"
     shift
-    luthor_scripts_parse_requirements "$@"
+    dlx_scripts_parse_requirements "$@"
     shift $#
     ;;    
   
   # :command.command_fallback
   * )
-    luthor_usage
+    dlx_usage
     exit 1
     ;;
   
@@ -1286,7 +1286,7 @@ parse_requirements() {
 }
 
 # :command.parse_requirements
-luthor_doctor_parse_requirements() {
+dlx_doctor_parse_requirements() {
   # :command.fixed_flag_filter
   case "$1" in
   --version | -v )
@@ -1296,7 +1296,7 @@ luthor_doctor_parse_requirements() {
   
   --help | -h )
     long_usage=yes
-    luthor_doctor_usage
+    dlx_doctor_usage
     exit
     ;;
   
@@ -1331,7 +1331,7 @@ luthor_doctor_parse_requirements() {
 }
 
 # :command.parse_requirements
-luthor_list_parse_requirements() {
+dlx_list_parse_requirements() {
   # :command.fixed_flag_filter
   case "$1" in
   --version | -v )
@@ -1341,7 +1341,7 @@ luthor_list_parse_requirements() {
   
   --help | -h )
     long_usage=yes
-    luthor_list_usage
+    dlx_list_usage
     exit
     ;;
   
@@ -1376,7 +1376,7 @@ luthor_list_parse_requirements() {
 }
 
 # :command.parse_requirements
-luthor_build_parse_requirements() {
+dlx_build_parse_requirements() {
   # :command.fixed_flag_filter
   case "$1" in
   --version | -v )
@@ -1386,7 +1386,7 @@ luthor_build_parse_requirements() {
   
   --help | -h )
     long_usage=yes
-    luthor_build_usage
+    dlx_build_usage
     exit
     ;;
   
@@ -1433,7 +1433,7 @@ luthor_build_parse_requirements() {
 }
 
 # :command.parse_requirements
-luthor_run_parse_requirements() {
+dlx_run_parse_requirements() {
   # :command.fixed_flag_filter
   case "$1" in
   --version | -v )
@@ -1443,7 +1443,7 @@ luthor_run_parse_requirements() {
   
   --help | -h )
     long_usage=yes
-    luthor_run_usage
+    dlx_run_usage
     exit
     ;;
   
@@ -1461,7 +1461,7 @@ luthor_run_parse_requirements() {
     args[name]=$1
     shift
   else
-    printf "missing required argument: NAME\nusage: luthor run NAME\n"
+    printf "missing required argument: NAME\nusage: dlx run NAME\n"
     exit 1
   fi
   # :command.required_flags_filter
@@ -1494,7 +1494,7 @@ luthor_run_parse_requirements() {
 }
 
 # :command.parse_requirements
-luthor_shell_parse_requirements() {
+dlx_shell_parse_requirements() {
   # :command.fixed_flag_filter
   case "$1" in
   --version | -v )
@@ -1504,7 +1504,7 @@ luthor_shell_parse_requirements() {
   
   --help | -h )
     long_usage=yes
-    luthor_shell_usage
+    dlx_shell_usage
     exit
     ;;
   
@@ -1522,7 +1522,7 @@ luthor_shell_parse_requirements() {
     args[container]=$1
     shift
   else
-    printf "missing required argument: CONTAINER\nusage: luthor shell CONTAINER\n"
+    printf "missing required argument: CONTAINER\nusage: dlx shell CONTAINER\n"
     exit 1
   fi
   # :command.required_flags_filter
@@ -1555,7 +1555,7 @@ luthor_shell_parse_requirements() {
 }
 
 # :command.parse_requirements
-luthor_stop_parse_requirements() {
+dlx_stop_parse_requirements() {
   # :command.fixed_flag_filter
   case "$1" in
   --version | -v )
@@ -1565,7 +1565,7 @@ luthor_stop_parse_requirements() {
   
   --help | -h )
     long_usage=yes
-    luthor_stop_usage
+    dlx_stop_usage
     exit
     ;;
   
@@ -1583,7 +1583,7 @@ luthor_stop_parse_requirements() {
     args[name]=$1
     shift
   else
-    printf "missing required argument: NAME\nusage: luthor stop NAME\n"
+    printf "missing required argument: NAME\nusage: dlx stop NAME\n"
     exit 1
   fi
   # :command.required_flags_filter
@@ -1616,7 +1616,7 @@ luthor_stop_parse_requirements() {
 }
 
 # :command.parse_requirements
-luthor_delete_parse_requirements() {
+dlx_delete_parse_requirements() {
   # :command.fixed_flag_filter
   case "$1" in
   --version | -v )
@@ -1626,7 +1626,7 @@ luthor_delete_parse_requirements() {
   
   --help | -h )
     long_usage=yes
-    luthor_delete_usage
+    dlx_delete_usage
     exit
     ;;
   
@@ -1644,7 +1644,7 @@ luthor_delete_parse_requirements() {
     args[name]=$1
     shift
   else
-    printf "missing required argument: NAME\nusage: luthor delete NAME\n"
+    printf "missing required argument: NAME\nusage: dlx delete NAME\n"
     exit 1
   fi
   # :command.required_flags_filter
@@ -1677,7 +1677,7 @@ luthor_delete_parse_requirements() {
 }
 
 # :command.parse_requirements
-luthor_completions_parse_requirements() {
+dlx_completions_parse_requirements() {
   # :command.fixed_flag_filter
   case "$1" in
   --version | -v )
@@ -1687,7 +1687,7 @@ luthor_completions_parse_requirements() {
   
   --help | -h )
     long_usage=yes
-    luthor_completions_usage
+    dlx_completions_usage
     exit
     ;;
   
@@ -1722,7 +1722,7 @@ luthor_completions_parse_requirements() {
 }
 
 # :command.parse_requirements
-luthor_scripts_parse_requirements() {
+dlx_scripts_parse_requirements() {
   # :command.fixed_flag_filter
   case "$1" in
   --version | -v )
@@ -1732,7 +1732,7 @@ luthor_scripts_parse_requirements() {
   
   --help | -h )
     long_usage=yes
-    luthor_scripts_usage
+    dlx_scripts_usage
     exit
     ;;
   
@@ -1779,20 +1779,20 @@ initialize() {
 
   # :src/initialize.sh
   XDG_CONFIG_HOME=($HOME/.config)
-  LUTHOR_CONFIG_HOME=($XDG_CONFIG_HOME/luthor)
-  RECIPE_CONFIG_HOME=($LUTHOR_CONFIG_HOME/recipes)
-  PROFILE_CONFIG_HOME=($LUTHOR_CONFIG_HOME/profiles)
-  SCRIPT_CONFIG_HOME=($LUTHOR_CONFIG_HOME/scripts)
+  dlx_CONFIG_HOME=($XDG_CONFIG_HOME/dlx)
+  RECIPE_CONFIG_HOME=($dlx_CONFIG_HOME/recipes)
+  PROFILE_CONFIG_HOME=($dlx_CONFIG_HOME/profiles)
+  SCRIPT_CONFIG_HOME=($dlx_CONFIG_HOME/scripts)
   
-  if [ ! -d "$LUTHOR_CONFIG_HOME" ]; then
-  	`mkdir -p $LUTHOR_CONFIG_HOME`;
+  if [ ! -d "$dlx_CONFIG_HOME" ]; then
+  	`mkdir -p $dlx_CONFIG_HOME`;
   	`mkdir -p $RECIPE_CONFIG_HOME`;
   	`mkdir -p $PROFILE_CONFIG_HOME`;
   	`mkdir -p $SCRIPT_CONFIG_HOME`;
   	create_base;
   	create_scripts;
   fi
-  CONFIG_FILE=${LUTHOR_CONFIG_HOME}/luthor.ini
+  CONFIG_FILE=${dlx_CONFIG_HOME}/dlx.ini
 }
 
 # :command.run
@@ -1806,73 +1806,73 @@ run() {
   if [[ $action == "doctor" ]]; then
     if [[ ${args[--help]} ]]; then
       long_usage=yes
-      luthor_doctor_usage
+      dlx_doctor_usage
     else
-      luthor_doctor_command
+      dlx_doctor_command
     fi
   
   elif [[ $action == "list" ]]; then
     if [[ ${args[--help]} ]]; then
       long_usage=yes
-      luthor_list_usage
+      dlx_list_usage
     else
-      luthor_list_command
+      dlx_list_command
     fi
   
   elif [[ $action == "build" ]]; then
     if [[ ${args[--help]} ]]; then
       long_usage=yes
-      luthor_build_usage
+      dlx_build_usage
     else
-      luthor_build_command
+      dlx_build_command
     fi
   
   elif [[ $action == "run" ]]; then
     if [[ ${args[--help]} ]]; then
       long_usage=yes
-      luthor_run_usage
+      dlx_run_usage
     else
-      luthor_run_command
+      dlx_run_command
     fi
   
   elif [[ $action == "shell" ]]; then
     if [[ ${args[--help]} ]]; then
       long_usage=yes
-      luthor_shell_usage
+      dlx_shell_usage
     else
-      luthor_shell_command
+      dlx_shell_command
     fi
   
   elif [[ $action == "stop" ]]; then
     if [[ ${args[--help]} ]]; then
       long_usage=yes
-      luthor_stop_usage
+      dlx_stop_usage
     else
-      luthor_stop_command
+      dlx_stop_command
     fi
   
   elif [[ $action == "delete" ]]; then
     if [[ ${args[--help]} ]]; then
       long_usage=yes
-      luthor_delete_usage
+      dlx_delete_usage
     else
-      luthor_delete_command
+      dlx_delete_command
     fi
   
   elif [[ $action == "completions" ]]; then
     if [[ ${args[--help]} ]]; then
       long_usage=yes
-      luthor_completions_usage
+      dlx_completions_usage
     else
-      luthor_completions_command
+      dlx_completions_command
     fi
   
   elif [[ $action == "scripts" ]]; then
     if [[ ${args[--help]} ]]; then
       long_usage=yes
-      luthor_scripts_usage
+      dlx_scripts_usage
     else
-      luthor_scripts_command
+      dlx_scripts_command
     fi
   
   elif [[ $action == "root" ]]; then
